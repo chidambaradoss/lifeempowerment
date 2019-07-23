@@ -1,0 +1,129 @@
+<? include "header.php"; ?>
+            <!--===================================================-->
+            <!--END NAVBAR-->
+            <div class="boxed">
+                <!--CONTENT CONTAINER-->
+                <!--===================================================-->
+                <div id="content-container">
+                    
+                    <div class="pageheader">
+                        <h3><i class="fa fa-home"></i> Checkout </h3>
+                        <div class="breadcrumb-wrapper">
+                            <span class="label">You are here:</span>
+                            <ol class="breadcrumb">
+                                <li> <a href="welcome.php"> Home </a> </li>
+                                <li class="active">Checkout </li>
+                            </ol>
+                        </div>
+                    </div>
+<?php
+$act = isSet($act) ? $act : '' ; 
+$id = isSet($id) ? $id : '' ;
+$idvalue= isSet($id) ? $id : '' ;
+$status = isSet($status) ? $status : '' ;
+$Message=isSet($Message)?$Message:'';
+$search=isSet($search)?$search:'';
+$pay_status=isSet($pay_status)?$pay_status:'';
+$DisplayStatus=isSet($DisplayStatus)?$DisplayStatus:'';
+
+
+if($status == "1") {
+    $db->insertrec("update checkout set pay_status='0' where id='$id'");
+    header("location:checkout.php?act=sts");
+    exit ;
+}
+else if($status == "0") {
+    $db->insertrec("update checkout set pay_status='1' where id='$id'");
+    header("location:payment.php?act=sts");
+    exit ;
+}
+
+$GetRecords=$db->get_all("select a.* , b.title FROM checkout as a INNER JOIN course as b ON a.course_id=b.id and a.pay_status='0' order by id desc");
+
+
+
+if(count($GetRecords)==0)
+    $Message="No Record found";
+$disp = "";
+$i=1;
+foreach($GetRecords as $Record=>$GetRecord) {
+    $idvalue = $GetRecord['id'];
+	$title = $GetRecord['title'];
+	$first_name = $GetRecord['first_name'];
+	$last_name = $GetRecord['last_name'];
+	$email = $GetRecord['email'];
+	//$exp_month= $GetRecord['exp_month'];
+	//$exp_year = $GetRecord['exp_year'];
+	$pay_status = $GetRecord['pay_status'] ;
+	
+    if($pay_status == '0'){
+        $DisplayStatus = $GT_InActive;
+		$Title = "Active";
+		$status_active = "Deactive";
+
+	}	
+    else if($pay_status == '1'){
+        $DisplayStatus = $GT_Active;
+		$Title = "Deactive";
+		$status_active = "Active";
+	}
+	
+	    $disp .="<tr>
+				<td  align='left'>$i</td>
+				<td  align='left'>$title</td>
+				<td  align='left'>$first_name $last_name</td>
+				<td  align='left'>$email</td>
+				
+
+				
+				<td width='20%'>
+				<div class='btn-group btn-group-xs'>
+				<a href='checkoutview.php?id=$idvalue' title='View checkout Details' class='btn btn-default' data-toggle='tooltip'>$GT_View</a>
+					<a href='checkout.php?id=$idvalue&status=$pay_status' title='$Title' class='btn btn-default' data-toggle='tooltip'>$DisplayStatus</a>
+	
+				</div>
+				</td>
+			</tr>";
+			$i++;
+}
+if($act == "sts")
+    $Message = "<font color='green'><b>Status Changed Successfully</b></font>" ;
+?>
+ <!--Page content-->
+                    <!--===================================================-->
+                    <div id="page-content">
+                        <!-- Basic Data Tables -->
+                        <!--===================================================-->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" ><?php echo $Message ?></h3>
+                            </div>
+                            <div class="panel-body">
+								
+							    <table id="demo-dt-basic" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+											<th>S.No</th>
+											<th>Course Name</th>
+											<th>User Name</th>
+											<th>Email</th>
+											
+											<th class='cntrhid'>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody><?echo $disp; ?></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+					
+					
+					                    <!--===================================================-->
+                    <!--End page content-->
+                </div>
+                <!--===================================================-->
+                <!--END CONTENT CONTAINER-->
+			<? include "leftmenu.php"; ?>	
+            </div>
+<? include "footer.php"; ?>
