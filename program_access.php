@@ -1,3 +1,5 @@
+
+<?php  include "includes/header.php"; ?>
 <style>
 .banner-title {
 
@@ -294,11 +296,10 @@ z-index: 100;
     display: inline-block;
 }
 </style>
-<?php  include "includes/header.php"; ?>
 	<div id="content" class="site-content">
 		<main id="main" class="site-main">
 			<section class="main-banner pattern" style="height: 100vh">
-				<img class="banner-image" src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1563346086/ap3ju6xufd6f32vhfopb.jpg" alt="" />
+				<img class="banner-image" src="images/assets/church_sd.jpg" alt="" />
 				<div class="banner-title">
 					<h3>We believe that the church plays an important role in the society, To most people out there the church is their only beacon of hope and place where their  future is engineered and shaped for good.  That is why we launched the Church Access Life Empowered Program.</h3>
 				</div>

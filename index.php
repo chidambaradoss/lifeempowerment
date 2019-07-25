@@ -220,7 +220,7 @@
 				<div class="row program_list_row row-eq-height">
 					<div class="col-md-3">
 						<div class="program_left_box">
-							<img src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1563346086/ap3ju6xufd6f32vhfopb.jpg" class="program_left_box_img">
+							<img src="images/assets/church_sd.jpg" class="program_left_box_img">
 						  <a href="program_access.php">
                 <div class="program_left_box_title">
 								          Church Access Plan
