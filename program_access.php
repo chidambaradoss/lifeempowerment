@@ -410,24 +410,24 @@ z-index: 100;
               <div class="program_head">AUDIO-VISUAL/PRINT MEDIA</div>
               <div class="row">
                 <div class="col-md-6 program_subbox ">
-                  <i class="fa fa-camera"></i>
+                  <div class="program_icon"><i class="fa fa-camera"></i></div>
                   <div class="program_sub-head">Photography</div>
                   <p class="program_p">Learn From the best and become a professional photographer in as little as 1 month</p>
                 </div>
                 <div class="col-md-6 program_subbox">
-                  <i class="fa fa-film"></i><i class="fa fa-video-camera"></i>
+                  <div class="program_icon"><i class="fa fa-film"></i><i class="fa fa-video-camera"></i></div>
                   <div class="program_sub-head">Video Editing</div>
                   <p class="program_p">Become very useful to yourself and your local church by getting the right  training on how to get the message across effectively</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 program_subbox">
-                  <i class="fa fa-volume-up"></i>
+                  <div class="program_icon"><i class="fa fa-volume-up"></i></div>
                   <div class="program_sub-head">Audio Editing</div>
                   <p class="program_p">Become  a audio manager professional and be useful to your local church and travel setting up audio platforms across the world</p>
                 </div>
                 <div class="col-md-6 program_subbox">
-                  <i class="fa fa-photo"></i>
+                  <div class="program_icon"><i class="fa fa-photo"></i></div>
                   <div class="program_sub-head">Art & Design</div>
                   <p class="program_p">Gain the knowledge you need to design world-class digitsl and print poster banner and animated scenes and work from home for a global market</p>
                 </div>
@@ -438,10 +438,89 @@ z-index: 100;
             </div>
             <div class="col-md-3 program_business">
               <div class="program_head">BUSINESS/MARKETING</div>
+              <div class="program_subbox">
+                <div class="program_small_icon">
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-podcast"></i>
+                </div>
+                <div class="program_sub-head">Social Media Digital Marketing</div>
+                <p class="program_p">The world today revolves around the digital space become an expert in this  space and work from home</p>
+              </div>
+              <div class="program_subbox">
+                <div class="program_small_icon"><i class="fa fa-street-view"></i></div>
+                <div class="program_sub-head">ENTREPREUNSHIP</div>
+                <p class="program_p">Business as the speed of thougth is what the world has become today. if you can dream it you can make it happen</p>
+              </div>
 
             </div>
             <div class="col-md-2 program_music">
               <div class="program_head">MUSIC</div>
+              <div class="program_subbox">
+                <div class="program_icon"><i class="fa fa-microphone"></i></i></div>
+                <p class="program_p">Play diffrent music intrument and become a genius yourself</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<div class="clearfix"></div>
+
+      <section class="program_section">
+        <div class="container">
+          <div class="row row-eq-height program_row">
+            <div class="col-md-3 program_apply">
+              <h2 class="program_apply_h2">Certification Programs</h2>
+              <p class="program_apply_p">Award winning mentors and tutors from across the globe with hands on experience and professional approach in  bringing home the  indepth knowledge  that drives innovation</p>
+            </div>
+            <div class="col-md-9 program_media">
+              <div class="program_head">IT / TECHNOLOGY </div>
+              <div class="row">
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="fas fa-fingerprint"></i></div>
+                  <div class="program_sub-head">Cyber Security</div>
+                  <p class="program_p">Become a certified secuirty professional and work for great companies across the world</p>
+                </div>
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="fas fa-sitemap"></i></div>
+                  <div class="program_sub-head">IT Networking</div>
+                  <p class="program_p">Become a certified IT Network professional and work for great companies across the world</p>
+                </div>
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="fa fa-database"></i></div>
+                  <div class="program_sub-head">Oracle Database Administrator</div>
+                  <p class="program_p">Become a certified database Adminisrtator professional and work for great companies across the world</p>
+                </div>
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="far fa-chart-bar"></i></div>
+                  <div class="program_sub-head">Project Management (PMP)</div>
+                  <p class="program_p">PMP certification is in high demand across the world get your certification today</p>
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 15px;">
+                <div class="col-md-1" style="margin-right: 35px;">
+                </div>
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="fa fa-clock-o"></i></div>
+                  <div class="program_sub-head">Scrum</div>
+                  <p class="program_p">Manager progect timeline and expectaions in record time</p>
+                </div>
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="fab fa-js"></i></div>
+                  <div class="program_sub-head">Javascript Fundamentals</div>
+                  <p class="program_p">Become a certified database Adminisrtator professional and work for great companies across the world</p>
+                </div>
+                <div class="col-md-3 program_subbox ">
+                  <div class="program_icon"><i class="fab fa-python"></i></div>
+                  <div class="program_sub-head">Python Fundamentals</div>
+                  <p class="program_p">PMP certification is in high demand across the world get your certification today</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -449,6 +528,35 @@ z-index: 100;
 
 
 <style type="text/css">
+.program_icon > i {
+    margin: 2px;
+}
+.program_icon {
+    font-size: 35px;
+    text-align: center;
+    color: #029dff;
+}
+.program_small_icon i {
+    font-size: 25px;
+    margin: 5px;
+    color: #029dff;
+}
+.program_small_icon
+{
+  text-align: center;
+  margin-top: 20px;
+}
+.program_sub-head {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.program_p {
+    font-size: 13px;
+    line-height: 1.2;
+    text-align: center;
+}
 .row.row-eq-height.program_row {
     margin: 30px 0px;
     border: solid 1px #cbcbcb;
@@ -480,6 +588,8 @@ z-index: 100;
 }
 .program_apply_p {
     margin-top: 15px;
+    text-align: justify;
+    line-height: 1.3;
 }
 .program_apply_button {
     background: #029dff;
