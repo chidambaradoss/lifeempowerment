@@ -31,18 +31,15 @@
 }
 .program_left_box {
     border-radius: 10px;
-    height: 250px;
     margin-bottom: 15px;
     box-shadow: rgba(0, 0, 0, 0.65) 1px 2px 10px;
     overflow: hidden;
-
 }
 .program_right_box {
     border-radius: 10px;
-    min-height: 250px;
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.65) 1px 2px 10px;
-
+    height: 100%;
 }
 .program_left_box_img {
     width: 100%;
@@ -64,7 +61,7 @@
 .program_left_box_title {
 
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     min-height: 30px;
     background-color: #0000008f;
     width: calc(100% - 30px);
@@ -108,6 +105,89 @@
 .banner-title h3 {
     font-size: 15px;
 	}
+  .right-box-table-row {
+    display: block !important;
+  }
+  .row-eq-height {
+    display: block !important;
+  }
+  .program_left_box {
+    height: 250px;
+  }
+  .program_right_box{
+      height: unset !important;
+  }
+  .table-cell {
+    padding-bottom: 25px !important;
+  }
+  .program_right_inner-box{
+    height: auto !important;
+    border-radius: 0px 0px 11px 11px !important;
+  }
+}
+
+.program_left_box_inner_title {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.program_right_box_list {
+    list-style: none;
+    padding: 0px;
+}
+.table-cell {
+    flex: auto;
+    border: solid 1px #cecece;
+    margin: 6px;
+    padding: 5px 15px;
+    border-radius: 3px;
+
+}
+
+
+.right-box-table-row
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.read-more-btn {
+    border: 0px;
+    color: #045bbd;
+    border-radius: 5px;
+    padding: 0px;
+    float: right;
+}
+.program_right_box_inner_box {
+    height: calc(100% - 20px);
+}
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.InClass-training-inner_head {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.InClass-training-inner_sub-head {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.InClass-training-inner_body {
+    font-size: 14px;
+}
+.program_right_inner-box {
+
+    background: #e9e9e9;
+    height: 100%;
+    padding: 10px;
+    border-radius: 0px 11px 11px 0px;
+
 }
 </style>
 <?php  include "includes/header.php"; ?>
@@ -130,10 +210,10 @@
 					</form>
 				</div>
 			</section>
-				
+
 		<section class="program_list">
 			<div class="container">
-				<div class="row program_list_row">
+				<div class="row program_list_row row-eq-height">
 					<div class="col-md-3">
 						<div class="program_left_box">
 							<img src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1563346086/ap3ju6xufd6f32vhfopb.jpg" class="program_left_box_img">
@@ -141,7 +221,7 @@
 								Church Access Plan
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="col-md-9">
 						<div class="program_right_box">
@@ -149,48 +229,94 @@
 								Church Access Plan
 							</div>
 							<p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+              <div class="right-box-table-row">
+								<div class="table-cell">
+                  <div class="program_right_box_inner_box">
+                    <div class="program_left_box_inner_title">
+                      SkillSet  Courses
+      							</div>
+                    <ul class="program_right_box_list">
+                      <li>Video Editing</li>
+                      <li>Photography</li>
+                      <li>Audio Editing</li>
+                      <li>Social Media Ads</li>
+                    </ul>
+                  </div>
+                  <a  href="program_access.php"><button class="read-more-btn">Learn more</button></a>
+                </div>
+                <div class="table-cell">
+                  <div class="program_right_box_inner_box">
+                    <div class="program_left_box_inner_title">
+                      Certification Program
+      							</div>
+                    <ul class="program_right_box_list">
+                      <li>Cyber Security</li>
+                      <li>Project Management (PMP)</li>
+                      <li>IT Networking</li>
+                      <li>Scrum</li>
+                      <li>Entreprenuship</li>
+                      <li>Python Fundamentals</li>
+                      <li>Javascript Fundamentals</li>
+                    </ul>
+                  </div>
+                  <a  href="program_access.php"><button class="read-more-btn">Learn more</button></a>
+                </div>
+                <div class="table-cell">
+                  <div class="program_right_box_inner_box">
+                    <div class="program_left_box_inner_title">
+                      Vocational Program
+      							</div>
+                    <ul class="program_right_box_list">
+                      <li>Auto Mechanics</li>
+                      <li>Agro Farming</li>
+                    </ul>
+
+                  </div>
+                  <a  href="program_access.php"><button class="read-more-btn">Learn more</button></a>
+                </div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row program_list_row">
+				<div class="row program_list_row row-eq-height">
 					<div class="col-md-3">
 						<div class="program_left_box">
 							<img src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1561719288/jyzwyqgdbjdyvtm6nonn.jpg" class="program_left_box_img">
 							<div class="program_left_box_title">
-								Entrepreneurial Training Program 
+								Entrepreneurial Training Program
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="col-md-9">
 						<div class="program_right_box">
 							<div class="program_right_box_title">
-								Entrepreneurial Training Program 
+								Entrepreneurial Training Program
 							</div>
 							<p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
 						</div>
 					</div>
 				</div>
-				<div class="row program_list_row">
+				<div class="row program_list_row row-eq-height">
 					<div class="col-md-3">
 						<div class="program_left_box">
 							<img src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1561547345/ljxunwtkjgka2pobeywy.jpg" class="program_left_box_img">
 							<div class="program_left_box_title">
-								Online Courses 
+								Online Courses
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="col-md-9">
 						<div class="program_right_box">
 							<div class="program_right_box_title">
-								Online Courses 
+								Online Courses
 							</div>
 							<p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
 						</div>
 					</div>
 				</div>
-				<div class="row program_list_row">
+				<div class="row program_list_row row-eq-height">
 					<div class="col-md-3">
 						<div class="program_left_box">
 							<img src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1561547416/pycg2gw70eos1lri5pzs.jpg" class="program_left_box_img">
@@ -198,20 +324,38 @@
 								Inclass Training Programs
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="col-md-9">
-						<div class="program_right_box">
-							<div class="program_right_box_title">
-								Inclass Training Programs
-							</div>
-							<p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+						<div class="program_right_box" style="padding: 0px;">
+
+              <div class="row row-eq-height">
+                <div class="col-md-9" style="padding: 15px 30px;">
+                  <div class="program_right_box_title">
+    								Inclass Training Programs
+    							</div>
+    							<p>Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris justo. Luctus arcu, urna praesent at id quisque ac. Arcu es massa vestibulum malesuada, integer vivamus elit eu mauris eus, cum eros quis aliquam wisi. Nulla wisi laoreet suspendisse integer vivamus elit eu mauris hendrerit facilisi, mi mattis pariatur aliquam pharetra eget.</p>
+                  <img style="width: 100%;height: 190px;" src="images/assets/worldmap.jpg"/>
+                </div>
+                <div class="col-md-3">
+                  <div class="program_right_inner-box">
+                    <div class="InClass-training-inner_head">Current Inclass Training Locations</div>
+                    <div class="InClass-training-inner_sub-head">USA</div>
+                    <div class="InClass-training-inner_body">SAN-ANTONIO TEXAS</div>
+                    <div class="InClass-training-inner_sub-head">AFRICA - NIGERIA</div>
+                    <div class="InClass-training-inner_body">ABUJA-NIGERIA</div>
+                    <div class="InClass-training-inner_body">HOUSTON TEXAS</div>
+                    <div class="InClass-training-inner_sub-head">GHANA</div>
+                    <div class="InClass-training-inner_body">ACCRA </div>
+                </div>
+                </div>
+              </div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>		
-		
+		</section>
+
                 <div class="clearfix"></div>
 				<section id="latest-courses-6">
 					<div class="container">
@@ -255,7 +399,7 @@
 									</div>
 									<div class="course-info">
 										<span class="course-cat"><a href="singlecourse.php?cid=<?php echo base64_encode($crs['id']); ?>"><?php echo $crs['category_name']; ?></a></span>
-										<h3 class="course-title"><a href="singlecourse.php?cid=<?php echo base64_encode($crs['id']); ?>"><?php 
+										<h3 class="course-title"><a href="singlecourse.php?cid=<?php echo base64_encode($crs['id']); ?>"><?php
 												$len=28;
 											echo checklength($crs['title'],$len);
 
@@ -300,7 +444,7 @@
 									Available Instructor
 								</div>
 								</div>
-								
+
 							</div>
 
 							<div class="col-md-3">
@@ -311,7 +455,7 @@
 									Available Classes
 								</div>
 								</div>
-								
+
 							</div>
 
 							<div class="col-md-3">
@@ -322,7 +466,7 @@
 									Free Classes
 								</div>
 								</div>
-								
+
 							</div>
 
 							<div class="col-md-3">
@@ -333,9 +477,9 @@
 									Registered Users
 								</div>
 								</div>
-								
+
 							</div>
-							
+
 						</div>
 					</div>
 				</section>
@@ -406,7 +550,7 @@ border-radius: 50%;
 					        <div class="carousel-caption">
 						        <p>LA is always so much fun!</p>
 						        <h3>AWOEYO OLAYEMI</h3>
-						        
+
 						    </div>
 
 					      </div>
@@ -416,16 +560,16 @@ border-radius: 50%;
 					        <div class="carousel-caption">
 						        <p>LA is always so much fun!</p>
 						        <h3>Los Angeles</h3>
-						        
+
 						    </div>
 					      </div>
-					    
+
 					      <div class="item">
 					        <img src="uploads/profile_images/5bb8938c51e2e.jpg" alt="Los Angeles" >
 					        <div class="carousel-caption">
 						        <p>LA is always so much fun!</p>
 						        <h3>Los Angeles</h3>
-						        
+
 						    </div>
 					      </div>
 					    </div>
@@ -440,10 +584,10 @@ border-radius: 50%;
 					      <span class="sr-only">Next</span>
 					    </a>
   					</div>
-					
+
 				</section>
 
-				
+
 
 				<section id="home-partner" class="">
 					<div class="container">
@@ -452,7 +596,7 @@ border-radius: 50%;
 							<div class="slider">
 							<?php
 							$partner=$db -> get_all("select * from partners where active_status='1'");
-							foreach($partner as $part){								
+							foreach($partner as $part){
 							?>
 								<div class="item">
 									<img src="uploads/partner/<?php echo $part['image']?>" alt="<?php echo $part['name']?>" />
@@ -471,7 +615,7 @@ color: #FFF !important;}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-$( document ).ready(function() {    
+$( document ).ready(function() {
 	var getval = document.domain;
 	var pass_arg = {get_val:getval};
 	$.ajax({
@@ -482,5 +626,5 @@ $( document ).ready(function() {
 	  data: pass_arg,
 	});
 });
-</script> 
+</script>
 <?php include "includes/footer.php"; ?>
