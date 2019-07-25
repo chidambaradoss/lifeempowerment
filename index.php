@@ -1,3 +1,6 @@
+
+
+<?php  include "includes/header.php"; ?>
 <style>
 .banner-title {
 
@@ -34,6 +37,7 @@
     margin-bottom: 15px;
     box-shadow: rgba(0, 0, 0, 0.65) 1px 2px 10px;
     overflow: hidden;
+    height: 100%;
 }
 .program_right_box {
     border-radius: 10px;
@@ -158,6 +162,7 @@
     border-radius: 5px;
     padding: 0px;
     float: right;
+    background: transparent;
 }
 .program_right_box_inner_box {
     height: calc(100% - 20px);
@@ -190,7 +195,6 @@
 
 }
 </style>
-<?php  include "includes/header.php"; ?>
 	<div id="content" class="site-content">
 		<main id="main" class="site-main">
 			<section class="main-banner pattern" style="max-height: 100vh;">
@@ -217,9 +221,11 @@
 					<div class="col-md-3">
 						<div class="program_left_box">
 							<img src="https://res.cloudinary.com/www-wowhubb-com/image/upload/v1563346086/ap3ju6xufd6f32vhfopb.jpg" class="program_left_box_img">
-							<div class="program_left_box_title">
-								Church Access Plan
-							</div>
+						  <a href="program_access.php">
+                <div class="program_left_box_title">
+								          Church Access Plan
+							  </div>
+              </a>
 						</div>
 
 					</div>

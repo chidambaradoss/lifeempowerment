@@ -101,7 +101,16 @@
     background-color: #eaf0f0;
 
 }
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
 @media only screen and (max-width: 600px) {
+  .row-eq-height {
+    display: block !important;
+  }
   .banner-title h2{
     font-size: 20px !important;
   }
@@ -252,7 +261,7 @@ z-index: 100;
 .signup_for_life button {
     background: #029dff;
     border: solid 2px #fff;
-    border-radius: 13px;
+    border-radius: 7px;
     color: #fff;
     padding: 5px 10px;
     font-size: 15px;
@@ -380,15 +389,120 @@ z-index: 100;
 
       <div class="clearfix"></div>
 
+
       <div class="dev_h_line">
           <div class="inner_box">
             <span class="lab_box">
-              COURSES
+              Program
             </span>
           </div>
       </div>
+      <section class="program_section">
+        <div class="container">
+          <div class="row row-eq-height program_row">
+            <div class="col-md-3 program_apply">
+              <h2 class="program_apply_h2">SkillSet Online Courses</h2>
+              <p class="program_apply_p">Award winning mentors and tutors from across the globe with hands on experience and professional approach in  bringing home the  indepth knowledge  that drives innovation</p>
+              <a href="#"><button class="program_apply_button">ENROLL NOW</button></a>
+            </div>
+            <div class="col-md-4 program_media">
+              <div class="program_head">AUDIO-VISUAL/PRINT MEDIA</div>
+              <div class="row">
+                <div class="col-md-6 program_subbox ">
+                  <i class="fa fa-camera"></i>
+                  <div class="program_sub-head">Photography</div>
+                  <p class="program_p">Learn From the best and become a professional photographer in as little as 1 month</p>
+                </div>
+                <div class="col-md-6 program_subbox">
+                  <i class="fa fa-film"></i><i class="fa fa-video-camera"></i>
+                  <div class="program_sub-head">Video Editing</div>
+                  <p class="program_p">Become very useful to yourself and your local church by getting the right  training on how to get the message across effectively</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 program_subbox">
+                  <i class="fa fa-volume-up"></i>
+                  <div class="program_sub-head">Audio Editing</div>
+                  <p class="program_p">Become  a audio manager professional and be useful to your local church and travel setting up audio platforms across the world</p>
+                </div>
+                <div class="col-md-6 program_subbox">
+                  <i class="fa fa-photo"></i>
+                  <div class="program_sub-head">Art & Design</div>
+                  <p class="program_p">Gain the knowledge you need to design world-class digitsl and print poster banner and animated scenes and work from home for a global market</p>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="col-md-3 program_business">
+              <div class="program_head">BUSINESS/MARKETING</div>
+
+            </div>
+            <div class="col-md-2 program_music">
+              <div class="program_head">MUSIC</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 <style type="text/css">
+.row.row-eq-height.program_row {
+    margin: 30px 0px;
+    border: solid 1px #cbcbcb;
+}
+.program_apply {
+    background: #171717;
+    color: #fff;
+    padding: 20px 25px;
+}
+.program_media
+{
+    padding: 10px 15px;
+}
+.program_business {
+    background: #ececec;
+    padding: 10px 15px;
+}
+.program_music {
+    background: #d7d7d7;
+    padding: 10px 15px;
+}
+
+.program_apply_h2 {
+
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+.program_apply_p {
+    margin-top: 15px;
+}
+.program_apply_button {
+    background: #029dff;
+    border: solid 1px #fff;
+    border-radius: 7px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.program_head
+{
+  font-size: 15px;
+  margin: 5px auto;
+  font-weight: bold;
+  text-align: center;
+  line-height: 15px;
+  height: 30px;
+}
+
+
+
+
 	#home-slider img {
 
     width: 120px !important;
